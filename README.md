@@ -9,8 +9,8 @@ This repository bundles work developed in the context of my bachelor's [thesis](
 * **Extended version.** If you're still hungry for more, take a look at the collection of [**supplemental figures**](#supplemental-figures) as well as the [**code**](#code) used for simulations and computations of delay master stability functions.
 
 **How to cite**
-* Paper: R. Börner, P. Schultz, B. Ünzelmann, D. Wang, F. Hellmann, J. Kurths, *Delay master stability of inertial oscillator networks*, arXiv preprint (2019)
-* Thesis: R. Börner, *Master Stability of Inertial Oscillator Networks with Delay* (2019)
+* Paper: R. Börner, P. Schultz, B. Ünzelmann, D. Wang, F. Hellmann, J. Kurths, Delay master stability of inertial oscillator networks, arXiv preprint arXiv:1911.09730 (2019). [BibTex](https://github.com/reykboerner/delay-networks/blob/master/paper_bibtex.txt)
+* Thesis: R. Börner, *Master Stability of Inertial Oscillator Networks with Delay*, Bachelor's thesis, Freie Universität Berlin (2019). [BibTex](https://github.com/reykboerner/delay-networks/blob/master/thesis_bibtex.txt)
 
 ### About the thesis
 The thesis includes:
