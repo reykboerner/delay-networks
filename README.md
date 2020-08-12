@@ -1,22 +1,23 @@
 # Delay master stability of inertial oscillator networks
 
-> An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.
-> * **Necessary and sufficient conditions** for asymptotic stability as a function of delay and network parameters
-> * Generalization of the master stability formalism to inertial oscillator networks with **arbitrary processing-type delay**
-> * **Application** to future **power grid** models.
+An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.
+* **Necessary and sufficient conditions** for asymptotic stability as a function of delay and network parameters
+* Generalization of the master stability formalism to inertial oscillator networks with **arbitrary processing-type delay**
+* Application to future **power grid** models.
 
 This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) published in *Physical Review Research*.
 
-### Where to start
+## Where to start
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages; see below for [more info on the thesis](#about-the-thesis)).
 
 * **I've read the paper/thesis. Where can I find additional material?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, and simulation results ([read more about the thesis](#about-the-thesis)). Additionally, this repo includes [supplemental figures](https://github.com/reykboerner/delay-networks/blob/master/figures) as well as an [implementation](#code) in the Julia language (dMSF calculations and DDE simulations).
 
 * **I want to try the simulations. How do I get started?** Read more [here](#code).
 
-----------
+<br/><br/>
 
-### About the thesis
+
+## About the thesis
 I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stability and resilience of complex hybrid infrastructure networks"](https://www.pik-potsdam.de/research/complexity-science/research/dynamics-stability-and-resilience-of-complex-hybrid-infrastructure-networks), which is part of *Research Domain 4 - Complexity Science* at the Potsdam Institute for Climate Impact Research (PIK). The thesis was formally supervised by Prof. Dr. Petra Imhof from the Institute of Theoretical Physics at Freie Universität Berlin (FU).
 
 **The thesis includes**
@@ -27,14 +28,15 @@ I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stabi
 - **Discussion** of the results and outlook (chapters 7 and 8).
 
 
-### Further material
-#### Code
+## Further material
+### Code
 > Coming soon...
-#### Supplemental figures
+### Supplemental figures
 > Coming soon...
 
---------
-##### How to cite
+<br/><br/>
+
+### How to cite
 Preferably, please cite the paper as follows when relating to this research:
 > R. Börner, P. Schultz, B. Ünzelmann, D. Wang, F. Hellmann, J. Kurths, *Delay master stability of inertial oscillator networks*, Phys. Rev. Research **2**, 023409 (2020).
 
@@ -68,8 +70,12 @@ To specifically cite the thesis:
     url = {https://github.com/reykboerner/delay-networks}
 }
 ```
-----------
-### Collaborators
-Frank Hellmann, Paul Schultz, Jürgen Kurths, Anton Plietzsch, Benjamin Ünzelmann, Deli Wang
+
+<br/><br/>
+
+# Collaborators
+#### Frank Hellmann, Jürgen Kurths, Anton Plietzsch, Paul Schultz, Benjamin Ünzelmann, Deli Wang
 
 This work is part of the [CoNDyNet 2](condynet.de) project, sponsored by the German Federal Ministry of Education and Research (BMBF).
+
+<p align = "center"><img rsc="https://github.com/reykboerner/delay-networks/blob/master/info/logo-banner.png" alt="logo-banner" width="100%"/></p>

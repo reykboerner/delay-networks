@@ -1,5 +1,4 @@
-# <sup> To synchronize or not to synchronize:
-# Exact stability conditions in networks with delay
+# To synchronize or not to synchronize: Exact stability conditions in networks with delay
 
 Interactions in the real world often occur with a time delay that may influence how a complex system behaves.  In this article, we present a theoretical method to determine whether synchronized states in networks with delayed dynamics are stable against small disturbances.
 
