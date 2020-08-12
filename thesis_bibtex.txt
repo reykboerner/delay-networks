@@ -1,8 +1,0 @@
-@mastersthesis{boerner2019thesis,
-    title = {Master Stability of Inertial Oscillators with Delay -- An analytical approach applied to renewable power grids},
-    author = {Reyk Börner},
-    year = {2019},
-    type = {Bachelor's thesis},
-    school = {Freie Universit\"at Berlin},
-    url = {https://github.com/reykboerner/delay-networks}
-}

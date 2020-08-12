@@ -1,6 +1,0 @@
-@article{boerner2019delay,
-  title={Delay master stability of inertial oscillator networks},
-  author={B{\"o}rner, Reyk and Schultz, Paul and {\"U}nzelmann, Benjamin and Wang, Deli and Hellmann, Frank and Kurths, J{\"u}rgen},
-  journal={arXiv preprint arXiv:1911.09730},
-  year={2019}
-}
