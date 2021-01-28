@@ -98,4 +98,4 @@ To specifically cite the thesis:
 
 This work is part of the [CoNDyNet 2](condynet.de) project, sponsored by the German Federal Ministry of Education and Research (BMBF).
 
-<p align = "center"><img rsc="https://github.com/reykboerner/delay-networks/blob/master/info/logo-banner.png" alt="logo-banner" width="100%"/></p>
+<p align = "center"><img src="https://github.com/reykboerner/delay-networks/blob/master/info/logo-banner.png" alt="logo-banner" width="70%"/></p>
