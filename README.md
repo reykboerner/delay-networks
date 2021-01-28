@@ -1,11 +1,14 @@
 # Delay master stability of inertial oscillator networks
 
-An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.
+**An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.**
 * **Necessary and sufficient conditions** for asymptotic stability as a function of delay and network parameters
 * Generalization of the master stability formalism to inertial oscillator networks with **arbitrary processing-type delay**
 * Application to future **power grid** models.
 
+<br/>
+
 > This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) published in *Physical Review Research*.
+
 
 ## Where to start
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages).
@@ -29,7 +32,7 @@ I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stabi
 - **Context** information on power grids and their study using complex networks tools (chapter 4)
 - **Discussion** of the results and outlook (chapters 7 and 8).
 
-<br/><br/>
+<br/>
 
 ## Running the code
 
