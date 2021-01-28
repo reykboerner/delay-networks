@@ -35,7 +35,7 @@ I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stabi
 
 Currently, this repository contains a **slider application** which allows DDE simulations of the Decentral Smart Grid Control model on a 4-node network (see chapter 6 of the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) for details). For a given delay, the application shows the position on the delay master stability function (left panel) and simulation results of the four nodal frequency deviations, after a random initial perturbation, as a function of time (right panel).
 
-<p align = "center"><img src="https://github.com/reykboerner/delay-networks/blob/master/figures/dsgc_star_slider_snap.png" alt="slider-snap" width="60%"/></p>
+<p align = "center"><img src="https://github.com/reykboerner/delay-networks/blob/master/figures/dsgc_star_slider_snap.png" alt="slider-snap" width="90%"/></p>
 
 ### Prerequisites
 To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.5.3`). The following Julia packages will be required:
