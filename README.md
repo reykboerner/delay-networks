@@ -5,16 +5,19 @@ An analytical approach to determine the stability of synchronized oscillators on
 * Generalization of the master stability formalism to inertial oscillator networks with **arbitrary processing-type delay**
 * Application to future **power grid** models.
 
-This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) published in *Physical Review Research*.
+> This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) published in *Physical Review Research*.
 
 ## Where to start
-* **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages; see below for [more info on the thesis](#about-the-thesis)).
+* **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages).
 
-* **I've read the paper/thesis. Where can I find additional material?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, and simulation results ([read more about the thesis](#about-the-thesis)). Additionally, this repo includes [supplemental figures](https://github.com/reykboerner/delay-networks/blob/master/figures) as well as an [implementation](#running-the-code) in the Julia language (dMSF calculations and DDE simulations).
+* **Where can I find supplemental meterial for the paper?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, supplemental figures, and simulation results ([read more about the thesis](#about-the-thesis)). <br/>
+Some [code](#running-the-code) for DDE simulations is available; more will be added soon or can be requested (contact [me](reyk.boerner@fu-berlin.de)).
 
 * **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
-<br/><br/>
+> Click [here](https://github.com/reykboerner/delay-networks/blob/master/info/210127_talk.pdf) for my **presentation slides** of the talk given on January 27. To play around with the simulation slider, [read more here](#running-the-code).
+
+<br/>
 
 ## About the thesis
 I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stability and resilience of complex hybrid infrastructure networks"](https://www.pik-potsdam.de/research/complexity-science/research/dynamics-stability-and-resilience-of-complex-hybrid-infrastructure-networks), which is part of *Research Domain 4 - Complexity Science* at the Potsdam Institute for Climate Impact Research (PIK). The thesis was formally supervised by Prof. Dr. Petra Imhof from the Institute of Theoretical Physics at Freie Universität Berlin (FU).
@@ -29,30 +32,25 @@ I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stabi
 <br/><br/>
 
 ## Running the code
-This repository contains the code used to compute dMSFs and to simulate the delayed dynamics of the four-node power grid model. Besides allowing for testing of our results, the code may also serve as a starting point to calculate dMSFs for your own DDE network model.
+
+Currently, this repository contains a **slider application** which allows DDE simulations of the Decentral Smart Grid Control model on a 4-node network (see chapter 6 of the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) for details). For a given delay, the application shows the position on the delay master stability function (left panel) and simulation results of the four nodal frequency deviations, after a random initial perturbation, as a function of time (right panel).
+
+<p align = "center"><img rsc="https://github.com/reykboerner/delay-networks/blob/master/figures/dsgc_star_slider_snap.png" alt="slider-snap" width="80%"/></p>
 
 ### Prerequisites
-To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.4.2`). The following Julia packages will be required:
-- `LinearAlgebra.jl`
-- `NLsolve.jl`
-- `Roots.jl`
-- `LightGraphs.jl` (to generate Watts-Strogatz graphs)
-- `Statistics.jl` (to sample the Watts-Strogatz graphs)
+To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.5.3`). The following Julia packages will be required:
+- `NLsolve.jl` (to obtain the synchronous fixed point)
 - `DifferentialEquations.jl` (to perform the DDE simulations)
 - `Plots.jl` (for plotting)
 - `LaTeXStrings.jl` (for plotting)
+- `Interact` (to make the slider)
+- `Mux` (to make the slider)
+- `DelimitedFiles` (to read data from files)
 
-### Calculating delay master stability functions (dMSF)
-> Coming soon...
-
-
-### Simulating delayed dynamics of the 4-node model
-> Coming soon...
-
-<br/><br/>
-
-## Further material
-Supplemental figures are located in the `figures` subfolder.
+### Slider
+* Run the file `dsgc_star_slider.jl` located in the `code` folder.
+* If you wish, you can customize the set of slider values (delay in seconds) by modifying `tau_list` in line 12.
+* Once the code is executed, go to your webbrowser and enter `localhost:8001/` in the search bar. The slider should appear.
 
 <br/><br/>
 
