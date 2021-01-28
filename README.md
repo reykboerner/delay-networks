@@ -11,7 +11,7 @@ An analytical approach to determine the stability of synchronized oscillators on
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages).
 
 * **Where can I find supplemental meterial for the paper?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, supplemental figures, and simulation results ([read more about the thesis](#about-the-thesis)). <br/>
-Some [code](#running-the-code) for DDE simulations is available; more will be added soon or can be requested (contact [me](reyk.boerner@fu-berlin.de)).
+Some [code](#running-the-code) for DDE simulations is available; more will be added soon or can be requested (contact [me](mailto:reyk.boerner@fu-berlin.de)).
 
 * **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
