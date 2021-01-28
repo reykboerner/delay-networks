@@ -10,29 +10,49 @@ This repository bundles work developed in the context of my bachelor's [thesis](
 ## Where to start
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages; see below for [more info on the thesis](#about-the-thesis)).
 
-* **I've read the paper/thesis. Where can I find additional material?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, and simulation results ([read more about the thesis](#about-the-thesis)). Additionally, this repo includes [supplemental figures](https://github.com/reykboerner/delay-networks/blob/master/figures) as well as an [implementation](#code) in the Julia language (dMSF calculations and DDE simulations).
+* **I've read the paper/thesis. Where can I find additional material?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, and simulation results ([read more about the thesis](#about-the-thesis)). Additionally, this repo includes [supplemental figures](https://github.com/reykboerner/delay-networks/blob/master/figures) as well as an [implementation](#running-the-code) in the Julia language (dMSF calculations and DDE simulations).
 
-* **I want to try the simulations. How do I get started?** Read more [here](#code).
+* **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
 <br/><br/>
-
 
 ## About the thesis
 I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stability and resilience of complex hybrid infrastructure networks"](https://www.pik-potsdam.de/research/complexity-science/research/dynamics-stability-and-resilience-of-complex-hybrid-infrastructure-networks), which is part of *Research Domain 4 - Complexity Science* at the Potsdam Institute for Climate Impact Research (PIK). The thesis was formally supervised by Prof. Dr. Petra Imhof from the Institute of Theoretical Physics at Freie Universität Berlin (FU).
 
-**The thesis includes**
+#### Content
 - The **theoretical basics**: asymptotic stability, delay differential equations, synchronization in complex networks (chapter 2)
 - A step-by-step **derivation** of the general method, including both processing and communication delay (chapter 3)
 - A detailed discussion of the **application** to two future power grid models, including a comparison with simulation results (chapters 5 and 6)
 - **Context** information on power grids and their study using complex networks tools (chapter 4)
 - **Discussion** of the results and outlook (chapters 7 and 8).
 
+<br/><br/>
+
+## Running the code
+This repository contains the code used to compute dMSFs and to simulate the delayed dynamics of the four-node power grid model. Besides allowing for testing of our results, the code may also serve as a starting point to calculate dMSFs for your own DDE network model.
+
+### Prerequisites
+To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.4.2`). The following Julia packages will be required:
+- `LinearAlgebra.jl`
+- `NLsolve.jl`
+- `Roots.jl`
+- `LightGraphs.jl` (to generate Watts-Strogatz graphs)
+- `Statistics.jl` (to sample the Watts-Strogatz graphs)
+- `DifferentialEquations.jl` (to perform the DDE simulations)
+- `Plots.jl` (for plotting)
+- `LaTeXStrings.jl` (for plotting)
+
+### Calculating delay master stability functions (dMSF)
+> Coming soon...
+
+
+### Simulating delayed dynamics of the 4-node model
+> Coming soon...
+
+<br/><br/>
 
 ## Further material
-### Code
-> Coming soon...
-### Supplemental figures
-> Coming soon...
+Supplemental figures are located in the `figures` subfolder.
 
 <br/><br/>
 

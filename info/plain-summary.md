@@ -8,4 +8,4 @@ What happens if we perturb one of the units slightly? Will all oscillators in th
 
 We apply our approach to two simplified models proposed to describe potential future energy systems. With the proliferation of renewable energy supply, it may become increasingly important to consider processing delays in the design and control of power grids. Additionally, the generality of our approach allows for application in various other contexts.
 
-<p align="center"><img src="https://github.com/reykboerner/delay-networks/blob/master/info/LL17070W_keyimage.png" alt="teaser" width="50%"/></p>
+<p align="center"><img src="https://github.com/reykboerner/delay-networks/blob/master/figures/LL17070W_keyimage.png" alt="teaser" width="50%"/></p>
