@@ -55,6 +55,8 @@ To play around with the code, you need to have the [Julia](https://julialang.org
 * If you wish, you can customize the set of slider values (delay in seconds) by modifying `tau_list` in line 12.
 * Once the code is executed, go to your webbrowser and enter `localhost:8001/` in the search bar. The slider should appear.
 
+*Note:* The precomputed datapoints of the delay master stability function (the curves in the left panel) are stored in the `.txt` files at the path `code/data`. To ensure that the Julia program can read these files, you must be in the working directory of the Julia file (i.e. `code`). To find out your current working directory, type the command `pwd()` into the REPL.
+
 <br/><br/>
 
 ### How to cite

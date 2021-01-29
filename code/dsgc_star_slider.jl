@@ -12,11 +12,11 @@ using DelimitedFiles # to read txt files
 tau_list = [0,0.33,0.36,1.7,2.,2.52,2.54,4.5,5,6.85,8.5,8.8,9.9]
 
 # read delay master stability function data
-tipping = readdlm("2021/schaefer_tipping.txt", ',', Float64) # boundaries of stability windows
-schaefer_sigma = readdlm("2021/schaefer_sigma.txt", ',', Float64) # sigma_max
-sch1 = readdlm("2021/schaefer_1.txt", ',', Float64) # eigenvalue lambda_1
-sch2 = readdlm("2021/schaefer_2.txt", ',', Float64) # eigenvalue lambda_2
-sch4 = readdlm("2021/schaefer_4.txt", ',', Float64) # eigenvalue lambda_4
+tipping = readdlm("data/schaefer_tipping.txt", ',', Float64) # boundaries of stability windows
+schaefer_sigma = readdlm("data/schaefer_sigma.txt", ',', Float64) # sigma_max
+sch1 = readdlm("data/schaefer_1.txt", ',', Float64) # eigenvalue lambda_1
+sch2 = readdlm("data/schaefer_2.txt", ',', Float64) # eigenvalue lambda_2
+sch4 = readdlm("data/schaefer_4.txt", ',', Float64) # eigenvalue lambda_4
 
 #model parameters
 system_size = 4
