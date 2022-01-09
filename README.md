@@ -1,6 +1,6 @@
 # Delay master stability of inertial oscillator networks
 
-An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.
+An analytical approach to determine the stability of synchronized networks of inertial oscillators with delayed dynamics.
 
 > This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding peer-reviewed [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409).
 
