@@ -1,14 +1,10 @@
 # Delay master stability of inertial oscillator networks
 
-**An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.**
-* **Necessary and sufficient conditions** for asymptotic stability as a function of delay and network parameters
-* Generalization of the master stability formalism to inertial oscillator networks with **arbitrary processing-type delay**
-* Application to future **power grid** models.
+An analytical approach to determine the stability of synchronized oscillators on complex networks with delayed dynamics.
 
-<br/>
+> This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding peer-reviewed [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409).
 
-> This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) published in *Physical Review Research*.
-
+> Click [here](https://github.com/reykboerner/delay-networks/blob/master/info/220107_talk.pdf) for my **presentation slides** shown at the SIAM UKIE Annual Meeting 2022 on January 7. Slides from a longer talk are available [here](https://github.com/reykboerner/delay-networks/blob/master/info/210127_talk.pdf). To play around with the simulation slider, [read more here](#running-the-code).
 
 ## Where to start
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages).
@@ -18,7 +14,6 @@ Some [code](#running-the-code) for DDE simulations is available; more will be ad
 
 * **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
-> Click [here](https://github.com/reykboerner/delay-networks/blob/master/info/210127_talk.pdf) for my **presentation slides** of the talk given on January 27. To play around with the simulation slider, [read more here](#running-the-code).
 
 <br/>
 
