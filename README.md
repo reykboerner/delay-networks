@@ -14,19 +14,6 @@ This repo currently contains code for calculating the delay master stability fun
 
 * **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
-
-<br/>
-
-## About the thesis
-I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stability and resilience of complex hybrid infrastructure networks"](https://www.pik-potsdam.de/research/complexity-science/research/dynamics-stability-and-resilience-of-complex-hybrid-infrastructure-networks), which is part of *Research Domain 4 - Complexity Science* at the Potsdam Institute for Climate Impact Research (PIK). The thesis was formally supervised by Prof. Dr. Petra Imhof from the Institute of Theoretical Physics at Freie Universität Berlin (FU).
-
-#### Content
-- The **theoretical basics**: asymptotic stability, delay differential equations, synchronization in complex networks (chapter 2)
-- A step-by-step **derivation** of the general method, including both processing and communication delay (chapter 3)
-- A detailed discussion of the **application** to two future power grid models, including a comparison with simulation results (chapters 5 and 6)
-- **Context** information on power grids and their study using complex networks tools (chapter 4)
-- **Discussion** of the results and outlook (chapters 7 and 8).
-
 <br/>
 
 ## Running the code
@@ -53,6 +40,18 @@ Requires the following Julia packages: `DifferentialEquations`, `NLsolve`, `Plot
 * Once the code is executed, go to your webbrowser and enter `localhost:8001/` in the search bar. The slider should appear.
 
 *Note:* The precomputed datapoints of the delay master stability function (the curves in the left panel) are stored in the `.txt` files at the path `code/data`. To ensure that the Julia program can read these files, you must be in the working directory of the Julia file (i.e. `code`). To find out your current working directory, type the command `pwd()` into the REPL.
+
+<br/>
+
+## About the thesis
+I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stability and resilience of complex hybrid infrastructure networks"](https://www.pik-potsdam.de/research/complexity-science/research/dynamics-stability-and-resilience-of-complex-hybrid-infrastructure-networks), which is part of *Research Domain 4 - Complexity Science* at the Potsdam Institute for Climate Impact Research (PIK). The thesis was formally supervised by Prof. Dr. Petra Imhof from the Institute of Theoretical Physics at Freie Universität Berlin (FU).
+
+#### Content
+- The **theoretical basics**: asymptotic stability, delay differential equations, synchronization in complex networks (chapter 2)
+- A step-by-step **derivation** of the general method, including both processing and communication delay (chapter 3)
+- A detailed discussion of the **application** to two future power grid models, including a comparison with simulation results (chapters 5 and 6)
+- **Context** information on power grids and their study using complex networks tools (chapter 4)
+- **Discussion** of the results and outlook (chapters 7 and 8).
 
 <br/><br/>
 
