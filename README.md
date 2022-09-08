@@ -2,15 +2,15 @@
 
 An analytical approach to determine the stability of synchronized networks of inertial oscillators with delayed dynamics.
 
-> This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding peer-reviewed [article](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409).
+> This repository bundles work developed in the context of my bachelor's [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) and provides supplemental material for the corresponding [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409).
 
 > Click [here](https://github.com/reykboerner/delay-networks/blob/master/info/220107_talk.pdf) for my **presentation slides** shown at the SIAM UKIE Annual Meeting 2022 on January 7. Slides from a longer talk are available [here](https://github.com/reykboerner/delay-networks/blob/master/info/210127_talk.pdf). To play around with the simulation slider, [read more here](#running-the-code).
 
 ## Where to start
 * **What's this about?** To learn more about this research, have a look at the [plain language summary](https://github.com/reykboerner/delay-networks/blob/master/info/plain-summary.md) (0.4 pages), the peer-reviewed [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409) (4 pages), or the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) (40 pages).
 
-* **Where can I find supplemental meterial for the paper?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, supplemental figures, and simulation results ([read more about the thesis](#about-the-thesis)). <br/>
-Some [code](#running-the-code) for DDE simulations is available; more will be added soon or can be requested (contact [me](mailto:reyk.boerner@fu-berlin.de)).
+* **Where can I find supplemental material for the paper?** Providing more detail than the paper, the thesis adds physical background, derivations, an in-depth treatment of the power grid application, supplemental figures, and simulation results ([read more about the thesis](#about-the-thesis)). <br/>
+This repo currently contains code for calculating the delay master stability function of the Decentral Smart Grid Control model on the star topology (Fig. 1c in the paper). Please [contact me](mailto:reyk.boerner@reading.ac.uk) for additional code.
 
 * **I want to run the code. How do I get started?** Read more [here](#running-the-code).
 
@@ -31,21 +31,23 @@ I conducted my bachelor's thesis in Dr. Frank Hellmann's group ["Dynamics, stabi
 
 ## Running the code
 
-Currently, this repository contains a **slider application** which allows DDE simulations of the Decentral Smart Grid Control model on a 4-node network (see chapter 6 of the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) for details). For a given delay, the application shows the position on the delay master stability function (left panel) and simulation results of the four nodal frequency deviations, after a random initial perturbation, as a function of time (right panel).
+Currently, this repository contains
+* `dsgc_star_dmsf.jl`,  a script to **calculate the delay master stability function** for the Decentral Smart Grid Control (DSGC) model on a 4-node star network;
+* `dsgc_star_slider.jl`, a **slider application** which allows DDE simulations of the DSGC model on the star network (see chapter 6 of the [thesis](https://github.com/reykboerner/delay-networks/blob/master/boerner_BA-thesis.pdf) for details). For a given delay, the application shows the position on the delay master stability function (see figure below, left panel) and simulation results of the four nodal frequency deviations, after a random initial perturbation, as a function of time (right panel).
 
 <p align = "center"><img src="https://github.com/reykboerner/delay-networks/blob/master/figures/dsgc_star_slider_snap.png" alt="slider-snap" width="90%"/></p>
 
 ### Prerequisites
-To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.5.3`). The following Julia packages will be required:
-- `NLsolve.jl` (to obtain the synchronous fixed point)
-- `DifferentialEquations.jl` (to perform the DDE simulations)
-- `Plots.jl` (for plotting)
-- `LaTeXStrings.jl` (for plotting)
-- `Interact` (to make the slider)
-- `Mux` (to make the slider)
-- `DelimitedFiles` (to read data from files)
+To play around with the code, you need to have the [Julia](https://julialang.org/) programming language installed (`v1.1.0` or higher, last tested with `v1.8.0`).
+
+### Delay master stability function
+Requires the following Julia packages: `Roots`, `NLsolve`, `LinearAlgebra`, `Plots`, `LaTeXStrings`, `DelimitedFiles`.
+* Run the script `dsgc_star_dmsf.jl` located in the `code` folder.
+* The script outputs a plot of the delay master stability function (dMSF) corresponding to Fig. 1c of the [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023409).
+* For more info, please see the comments in the script.
 
 ### Slider
+Requires the following Julia packages: `DifferentialEquations`, `NLsolve`, `Plots`, `LaTeXStrings`, `DelimitedFiles`, `Interact`, `Mux`.
 * Run the file `dsgc_star_slider.jl` located in the `code` folder.
 * If you wish, you can customize the set of slider values (delay in seconds) by modifying `tau_list` in line 12.
 * Once the code is executed, go to your webbrowser and enter `localhost:8001/` in the search bar. The slider should appear.
@@ -54,7 +56,7 @@ To play around with the code, you need to have the [Julia](https://julialang.org
 
 <br/><br/>
 
-### How to cite
+#### How to cite
 Preferably, please cite the paper as follows when relating to this research:
 > R. Börner, P. Schultz, B. Ünzelmann, D. Wang, F. Hellmann, J. Kurths, *Delay master stability of inertial oscillator networks*, Phys. Rev. Research **2**, 023409 (2020).
 
